@@ -1,0 +1,638 @@
+:root {
+  --bg: #0b0b0d;
+  --surface: #141416;
+  --text: #e5e5e5;
+  --muted: #9a9a9a;
+  --accent: #e50914;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 18px;
+  border: 1px solid #202020;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+nav .active > a {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Glow hover effect */
+.glow:hover {
+  box-shadow: 0 0 18px rgba(229, 9, 20, 0.6);
+  transform: translateY(-4px);
+  transition: all 0.25s ease;
+}
+
+/* Smooth card transition */
+.card {
+  transition: all 0.25s ease;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  background: #0b0b0d;
+  transition: all 0.25s ease;
+}
+
+.social:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+input,
+textarea {
+  background: #0f0f11;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 10px;
+  color: var(--text);
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  section {
+    margin-bottom: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    min-height: 60vh;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .social {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-container {
+    left: auto !important;
+    right: 16px !important;
+    bottom: 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  input,
+  textarea {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* ---------- BOTTOM NAV ---------- */
+.bottom-nav {
+  margin-top: 100px;
+  padding: 48px 16px 32px;
+  text-align: center;
+  background: radial-gradient(circle at top, #141416, #0b0b0d);
+  border-top: 1px solid #1f1f1f;
+}
+
+.bottom-nav h3 {
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.bottom-nav .role {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+.bottom-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.bottom-icons a {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  background: #101012;
+  transition: all 0.25s ease;
+}
+
+.bottom-icons a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 0 14px rgba(229, 9, 20, 0.4);
+}
+
+.bottom-nav small {
+  display: block;
+  color: #777;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .bottom-nav {
+    padding: 40px 16px 28px;
+  }
+
+  .bottom-icons a {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+/* ---------- EDUCATION ---------- */
+.edu-item {
+  margin-top: 20px;
+  padding-left: 16px;
+  border-left: 3px solid var(--accent);
+}
+
+.edu-item h3 {
+  margin-bottom: 6px;
+}
+
+.edu-place {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.edu-meta {
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+/* ---------- SKILLS HOVER GLOW ---------- */
+.skill {
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.skill:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 0 16px rgba(229, 9, 20, 0.55);
+  transform: translateY(-6px);
+}
+/* ---------- CONTACT FORM FULL WIDTH ---------- */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form input {
+  height: 50px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+/* ---------- SECTION SPACING ---------- */
+section.container {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  section.container {
+    margin-bottom: 10px;
+  }
+}
+
+/* ---------- CONTACT SECTION FIX ---------- */
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    margin-bottom: 20px;
+  }
+}
+
+/* ---------- CONTACT FIELD SPACING FIX ---------- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+/* ---------- EDUCATION ITEM HOVER GLOW ---------- */
+.edu-glow {
+  padding: 18px 16px;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+}
+
+.edu-glow:hover {
+  box-shadow: 0 0 18px rgba(229, 9, 20, 0.55);
+  transform: translateY(-4px);
+}
+
+/* ---------- NAVBAR HOVER EFFECT ---------- */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+nav a:hover {
+  color: var(--accent); /* red */
+}
+
+/* ---------- NAVBAR RESUME BUTTON ---------- */
+.nav-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 18px;
+  border: 1.5px solid var(--accent); /* 🔴 rectangle border */
+  border-radius: 10px; /* smooth rectangle */
+
+  color: var(--accent);
+  background: transparent;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.nav-resume-btn:hover {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 16px rgba(229, 9, 20, 0.6);
+  transform: translateY(-2px);
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  min-height: 77vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 70px;
+  align-items: center;
+  padding-left: 77px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.hero-text h3 {
+  font-size: 1.39rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  opacity: 0.9;
+}
+
+.hero-text p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 540px;
+  opacity: 0.85;
+  margin-bottom: 24px;
+}
+
+.hero-actions {
+  margin-top: 20px;
+}
+
+.hero-actions .btn {
+  padding: 14px 30px;
+  font-size: 1rem;
+}
+
+/* ---------- HERO IMAGE ---------- */
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 210px;
+  border-radius: 20px;
+  border: 2px solid rgba(229, 9, 20, 0.4);
+  box-shadow: 0 0 30px rgba(229, 9, 20, 0.35);
+
+  transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.hero-image img:hover {
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.6), 0 0 45px rgba(229, 9, 20, 0.45),
+    0 0 65px rgba(229, 9, 20, 0.25);
+
+  transform: scale(1.04);
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 210px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.15rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+/* ---------- EDUCATION METRIC BAR ---------- */
+
+.edu-metric {
+  margin-top: 14px;
+  max-width: 420px;
+}
+
+.edu-metric-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-bottom: 6px;
+}
+
+.edu-score {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.edu-bar {
+  width: 100%;
+  height: 8px;
+  background: #1f1f1f;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.edu-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff2d55, #a80202, #a80202);
+  box-shadow: 0 0 10px rgba(255, 45, 85, 0.4);
+  transition: width 0.6s ease;
+}
+
+/*Mobile*/
+
+@media (max-width: 768px) {
+  nav {
+    padding: 12px 16px !important;
+  }
+
+  /* Hide nav links */
+  /* nav > div {
+    display: none !important;
+  } */
+
+  /* Logo size */
+  nav h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding-top: 40px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    top: 0;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.1rem;
+    line-height: 1.25;
+  }
+
+  .hero-text h3 {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image img {
+    max-width: 210px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    display: none;
+  }
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 5000;
+  background: #0b0b0d;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  /* Adds this line to push Logo to Left and Links/Hamburger to Right */
+  justify-content: space-between;
+}
+
+/* Desktop Links Alignment */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* Remove any margin-left: auto if it was there */
+}
+
+/* ---------- HAMBURGER ---------- */
+.hamburger {
+  display: none; /* Hidden on desktop */
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 0;
+  z-index: 5001;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Shown on mobile */
+  }
+
+  .nav-links {
+    display: none; /* Hide standard links */
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the text links */
+    justify-content: center;
+    gap: 25px;
+
+    position: fixed;
+    top: 64px; /* Starts right below the navbar */
+    left: 0;
+    width: 100%;
+    height: auto; /* Or 100vh if you want it to cover the whole screen */
+
+    background: var(--bg); /* Match your background color */
+    padding: 40px 0;
+    z-index: 4999;
+    border-bottom: 2px solid var(--accent);
+  }
+
+  .nav-links.open a {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}

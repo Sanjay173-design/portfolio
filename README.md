@@ -113,7 +113,7 @@ Key mobile features:
 ## 🚀 Live Deployment
 
 🔗 Hosted on **AWS Amplify**  
-https://dev.d372gofnd5ja71.amplifyapp.com/
+"https://dev.d372gofnd5ja71.amplifyapp.com/"
 
 ---
 
@@ -125,7 +125,7 @@ Resume can be downloaded directly from the website using the **Download Resume**
 
 ## 🤝 Connect With Me
 
-- GitHub: https://github.com/Sanjay173-design
+- GitHub: "https://github.com/Sanjay173-design"
 - LinkedIn: "https://www.linkedin.com/in/hn-sanjay"
 
 ---

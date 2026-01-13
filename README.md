@@ -16,7 +16,6 @@ The main goal of this portfolio is to demonstrate **real-world frontend engineer
 
 ### Styling & UI
 - Custom **CSS** 
-- CSS variables for theme (`:root`)
 - Hover glow effects using `box-shadow`
 - Responsive layouts using **Flexbox & CSS Grid**
 - Mobile-first media queries
@@ -96,17 +95,6 @@ Key mobile features:
 - Email notifications
 - Logs & reports
 - AWS cloud infrastructure
-
----
-
-## 🎯 What This Portfolio Demonstrates
-
-- Strong **React fundamentals**
-- Clean and maintainable CSS
-- Responsive UI design
-- Attention to UX details
-- Real-world project presentation
-- Cloud deployment experience
 
 ---
 

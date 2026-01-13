@@ -15,7 +15,7 @@ The main goal of this portfolio is to demonstrate **real-world frontend engineer
 - **React Scroll** – smooth scrolling navigation
 
 ### Styling & UI
-- Custom **CSS (no UI framework)**  
+- Custom **CSS** 
 - CSS variables for theme (`:root`)
 - Hover glow effects using `box-shadow`
 - Responsive layouts using **Flexbox & CSS Grid**

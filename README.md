@@ -29,45 +29,16 @@ The main goal of this portfolio is to demonstrate **real-world frontend engineer
 
 ## ✨ Features Implemented
 
-### 🔹 Navbar
-- Sticky navigation bar
-- Smooth scroll to sections
-- Active section highlighting
-- **Responsive hamburger menu for mobile**
-- Resume download button with icon
-
-### 🔹 Hero Section
-- Intro text with role & description
-- Profile image with **hover glow animation**
-- Call-to-action button (Download Resume)
-- Fully responsive (desktop & mobile)
-
-### 🔹 Skills Section
-- Skills displayed as cards
-- **Hover glow + lift animation**
-- Clean grid layout
-- Mobile-friendly wrapping
-
-### 🔹 Projects Section
-- Project cards with description
-- Tech stack mentioned per project
-- GitHub & Live Demo links
-- Hover effects for better UX
-
-### 🔹 Education Section
-- Degree, college & year details
-- **CGPA / Percentage progress bars**
-- Individual hover glow per education block
-
-### 🔹 Contact Section
-- Contact form layout
-- Clean spacing between inputs
-- Mobile-optimized form design
-
-### 🔹 Social Links
-- Floating social icons (GitHub, LinkedIn)
-- Hover glow animation
-- Fixed positioning with mobile adjustments
+### 🔹 Features
+- Responsive design (mobile-first)
+- Sticky navbar with hamburger menu
+- Smooth scrolling navigation
+- Hero section with profile image & glow effects
+- Skills section with hover animations
+- Projects showcase
+- Education section with CGPA & percentage indicators
+- Resume download button
+- Social media quick links
 
 ---
 
